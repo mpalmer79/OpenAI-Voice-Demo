@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live Voice Streaming Demo</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem; }
+      button { font-size: 1rem; padding: .6rem 1rem; }
+      .row { margin: 1rem 0; }
+      .log { font-family: ui-monospace, SFMono-Regular, monospace; background:#f7f7f7; padding:1rem; border-radius:8px; }
+    </style>
+  </head>
+  <body>
+    <h1>Live Voice Streaming Demo</h1>
+    <div class="row">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+    </div>
+    <div class="row">
+      <strong>Status:</strong> <span id="status">idle</span>
+    </div>
+    <div class="row">
+      <div class="log" id="log"></div>
+    </div>
+    <script src="client.js"></script>
+  </body>
+</html>
